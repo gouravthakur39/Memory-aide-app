@@ -1,0 +1,32 @@
+.subject_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    list-style-type: none;
+}
+.subject_item{
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.subject_item:hover {
+    transform: scale(1.1);;
+}
+.subject-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.decorator-img{
+    height: 150px;
+    width: auto;
+    margin: auto;
+    opacity: 0.3;
+    position: fixed;
+}

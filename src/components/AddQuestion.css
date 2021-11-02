@@ -1,0 +1,16 @@
+.add-question-button {
+  display:flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid green;
+}
+.add-button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-question-text{
+  color: #fff;
+  margin-left: 10px;
+}

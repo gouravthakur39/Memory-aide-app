@@ -1,0 +1,22 @@
+.content {
+    background-color: #1b1b1b;
+    --bs-gutter-x: 0 !important;
+}
+.content-text{
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 20px;
+    
+
+}
+.content-header{
+    height: 90px;
+    background-color: #222122;
+    width: 100%;
+    padding: 0 40px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
