@@ -19,9 +19,11 @@ import {
 } from "reactstrap";
 import Content from "./Content";
 
+const title = "Memory aide"
+
 const CreateNewSubject = (props) => {
   const [enteredName, setEnteredName] = useState("");
-  const [subject, setSubject] = useState([]);
+  const [subject, setSubject] = useState(["algorithms", "Data structures", "Aptitude", "Reasoning"]);
   const [subjectClickedName, setSubjectClickedName] = useState("");
 
   const handleChange = (e) => {
@@ -44,7 +46,7 @@ const CreateNewSubject = (props) => {
     <Fragment>
       <div>
         <Navbar className="" color="dark" expand="md" dark fixed="top">
-          <NavbarBrand href="/">Memory Aide</NavbarBrand>
+          <NavbarBrand href="/">{title.toUpperCase()}</NavbarBrand>
           <NavbarToggler onClick={function noRefCheck() {}} />
           <Collapse navbar>
             <Nav className="ms-auto" navbar>
