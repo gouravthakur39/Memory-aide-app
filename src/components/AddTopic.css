@@ -1,0 +1,87 @@
+.add-topic-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid green;
+}
+.add-button-container {
+  margin-right: 30px;
+}
+.add-btn-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-topic-text-container {
+  height: 15px;
+  width: auto;
+}
+.add-topic-text {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+.modal-container {
+  height: 40vh;
+  width: 40vw;
+  /* min-height: calc(100vh - 60px); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #333333;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-color: rgb(51, 51, 51, 0.8);
+  box-shadow: 10px -48px 24px 7px rgba(117, 43, 254, 0.1) inset;
+  -webkit-box-shadow: 10px -48px 24px 7px rgba(117, 43, 254, 0.1) inset;
+  -moz-box-shadow: 10px -48px 24px 7px rgba(117, 43, 254, 0.1) inset;
+  backdrop-filter: saturate(180%) blur(10px);
+  animation-timing-function: ease-in;
+  transition: 0.25s;
+}
+.modal-header {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.close-modal-btn{
+  background-color: crimson;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.close-modal-btn:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.modal-body{
+  width: 50%;
+  margin: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create-topic-modal-btn{
+  width: 20%;
+  position: fixed;
+  top: 120px;
+  left: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

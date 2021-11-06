@@ -9,8 +9,6 @@ const DisplaySubject = (props) => {
   const [randomColor, setRandomColor] = useState("");
   const [selectedSubject, setSelectedSubject] = useState(0);
 
-  //TODO: selected subject
-
   props.subjectClickedHandler(selectedSubject);
 
   const generateRandomColor = (colors) => {
