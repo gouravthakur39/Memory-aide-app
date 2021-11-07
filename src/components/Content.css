@@ -58,6 +58,26 @@
   overflow-y: scroll;
   height: 64vh;
 }
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(127, 127, 128) #333;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #333;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(127, 127, 128);
+  border-radius: 20px;
+  border: 3px solid #333;
+}
 
 .settings-footer {
   --bs-gutter-x: 0;
@@ -76,16 +96,15 @@
   width: 100%;
   height: 40px;
   z-index: 9999;
-  
 }
-.options{
+.options {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
   margin-top: 5px;
 }
-.options p:hover{
+.options p:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
