@@ -24,10 +24,12 @@ const AddTopic = (props) => {
   };
 
   const createTopicHandler = () => {
-    const obj = { subject: subjectName, topic: enteredTopic };
+    const obj = { subject: subjectName, topic: enteredTopic.toLocaleLowerCase() };
     enteredTopic !== "" && setTopics([...topics, obj]);
     setEnteredTopic('')
   }
+
+  props.displayTopic(topics)
 
   useEffect(() => {
     console.log("topics : ", topics);
@@ -64,6 +66,7 @@ const AddTopic = (props) => {
               placeholder="Enter topic name..."
               value={enteredTopic}
               onChange={enteredTopicHandler}
+              autoFocus={true}
             />
           </div>
           <Button color="success" className="create-topic-modal-btn" onClick={createTopicHandler}>

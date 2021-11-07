@@ -95,7 +95,7 @@ const CreateNewSubject = (props) => {
             )}
           </div>
         </Col>
-        <Content subjectName={subjectClickedName} />
+        <Content subjectName={subjectClickedName.toLocaleLowerCase()} />
       </Row>
     </Fragment>
   );
