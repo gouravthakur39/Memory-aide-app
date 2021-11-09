@@ -48,8 +48,9 @@ const Content = (props) => {
             )}
           </div>
           <div className="prev-next-btn">
-            <Button>Prev ⏮️</Button>
-            <Button>Next ⏭️</Button>
+            <Button>🔀 Random</Button>
+            <Button>⏮️ Prev</Button>
+            <Button>⏭️ Next</Button>
           </div>
         </Row>
         <Row className="question-container">
